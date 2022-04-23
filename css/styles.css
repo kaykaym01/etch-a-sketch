@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.gameRow{
+    display: inline-block;
+}
+
+.gameCell{
+    border: solid 1px #4c4a4a;
+    height: 30px;
+    width: 30px;
+    background-color: #b3aeae;
+}
