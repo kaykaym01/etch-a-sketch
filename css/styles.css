@@ -13,3 +13,7 @@ body {
     width: 30px;
     background-color: #b3aeae;
 }
+
+.gameCell_hovered{
+    background-color: aquamarine;
+}

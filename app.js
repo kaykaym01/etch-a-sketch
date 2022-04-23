@@ -15,4 +15,11 @@ function setupGameBoard(){
     }
 }
 
+function cellHovered(e){
+    this.classList.add("gameCell_hovered");
+}
+
 setupGameBoard();
+
+let gameCells = document.querySelectorAll(".gameCell");
+gameCells.forEach(cell => cell.addEventListener('mousemove', cellHovered));
