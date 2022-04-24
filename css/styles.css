@@ -3,14 +3,22 @@ body {
     padding: 0;
 }
 
+.gameBoard{
+    width: 650px;
+    height: 650px;
+    border: solid 2px pink;
+    display: flex;
+    flex-direction: column;
+}
+
 .gameRow{
-    display: inline-block;
+    display: flex;
+    flex-grow: 1;
 }
 
 .gameCell{
+    flex-grow: 1;
     border: solid 1px #4c4a4a;
-    height: 30px;
-    width: 30px;
     background-color: #b3aeae;
 }
 
