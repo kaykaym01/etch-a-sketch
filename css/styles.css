@@ -1,11 +1,13 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Oswald, sans-serif;
+    background-color: #b3dfed;
 }
 
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
 }
 
@@ -22,9 +24,9 @@ body {
 }
 
 .gameBoard{
+    margin-top: 20px;
     width: 500px;
     height: 500px;
-    border: solid 2px pink;
     display: flex;
     flex-direction: column;
 }
@@ -42,4 +44,8 @@ body {
 
 .gameCell_hovered{
     background-color: aquamarine;
+}
+
+.resetBtn{
+    font-family: Oswald, sans-serif;
 }
