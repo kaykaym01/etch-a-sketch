@@ -7,8 +7,16 @@ body {
 
 .container{
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main{
+    display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    flex-grow: 1;
 }
 
 .options{
@@ -48,4 +56,9 @@ body {
 
 .resetBtn{
     font-family: Oswald, sans-serif;
+}
+
+.footer{
+    flex-shrink: 0;
+    text-align: center;
 }
