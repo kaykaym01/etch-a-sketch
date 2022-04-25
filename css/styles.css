@@ -3,9 +3,27 @@ body {
     padding: 0;
 }
 
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.boardSizeDiv{
+    display: flex;
+    flex-direction: column;
+}
+
 .gameBoard{
-    width: 650px;
-    height: 650px;
+    width: 500px;
+    height: 500px;
     border: solid 2px pink;
     display: flex;
     flex-direction: column;

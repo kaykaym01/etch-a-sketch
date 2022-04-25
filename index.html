@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +9,29 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="app.js" defer></script>
 </head>
-<body>    
-    <label for="boardSize">Board Size: </label>
-    <input type="range" id="boardSize" name="boardSize" min="16" max="96" value="16">
-    <h1 id="boardSizeValue">16 X 16</h1>
-    <input type="color" id="cellChangeColor" name="cellChangeColor" value="#7FFFD4">
-    <label for="cellChangeColor">Cell Change Color</label>
-    <p id="colorOutput"></p>
-    <input type="radio" id="normal" name="colorStyle" value="normal" checked>
-    <label for="normal">Normal</label>
-    <input type="radio" id="random" name="colorStyle" value="random">
-    <label for="random">Random</label>
-    <br>
-    <button class="resetBtn">Reset Board</button>
-    <div class="gameBoard">
 
+<body>
+    <div class="container">
+        <div class="options">
+            <h1>Etch-A-Sketch</h1>
+            <div class="boardSizeDiv">
+                <p><label for="boardSize">Board Size: </label><span id="boardSizeValue">16 X 16</span></p>
+                <input type="range" id="boardSize" name="boardSize" min="16" max="96" value="16">
+            </div>
+            <div class="cellColorDiv">
+                <input type="color" id="cellChangeColor" name="cellChangeColor" value="#7FFFD4">
+                <label for="cellChangeColor">Color</label>
+                <p id="colorOutput"></p>
+                <input type="radio" id="normal" name="colorStyle" value="normal" checked>
+                <label for="normal">Normal</label>
+                <input type="radio" id="random" name="colorStyle" value="random">
+                <label for="random">Random</label>
+            </div>
+            <button class="resetBtn">Reset Board</button>
+        </div>
+        <div class="gameBoard">
+        </div>
     </div>
-    
 </body>
+
 </html>
